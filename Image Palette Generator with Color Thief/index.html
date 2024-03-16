@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Image Palette Generator</h1>
+    <p id="desc">Extract beautiful palettes from images!</p>
+    <div class="box">
+        <div class="ftr">
+            <p id="pdesc">Palette</p>
+            <div class="palette" id="palette">
+            </div>
+            <div class="imginput">
+                <form>
+                    <input type="file" id="img-file" onchange="loadImage();" hidden>
+                    <label for="img-file" class="customfile">Upload Image</label>
+                </form>
+            </div>
+        </div>
+        <img id="image" src="pexels-photo-248159.jpg">
+    </div>
+    <script src="color-thief.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
